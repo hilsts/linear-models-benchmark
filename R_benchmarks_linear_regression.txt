@@ -1,0 +1,420 @@
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> DATA_PATH = "/Users/hilsts/Documents/linear-models-benchmark/data/"
+> df <- read.csv(paste(DATA_PATH,"song_data.csv", sep = ""))
+> 
+> set.seed(100)
+> 
+> df$song_name <- NULL
+> 
+> index = sample(1:nrow(df), 0.75 * nrow(df))
+> 
+> train = df[index, ]
+> test = df[-index, ]
+> 
+> linear_regression <- function(train, test) {
++     lr = lm(song_popularity~., data = train)
++     pred1 <- predict(lr, newdata = test)
++ }
+> 
+> start_time <- Sys.time()
+> linear_regression(train, test)
+> end_time <- Sys.time()
+> print(end_time - start_time)
+Time difference of 0.0103631 secs
+> 
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> DATA_PATH = "/Users/hilsts/Documents/linear-models-benchmark/data/"
+> df <- read.csv(paste(DATA_PATH,"song_data.csv", sep = ""))
+> 
+> set.seed(100)
+> 
+> df$song_name <- NULL
+> 
+> index = sample(1:nrow(df), 0.75 * nrow(df))
+> 
+> train = df[index, ]
+> test = df[-index, ]
+> 
+> linear_regression <- function(train, test) {
++     lr = lm(song_popularity~., data = train)
++     pred1 <- predict(lr, newdata = test)
++ }
+> 
+> start_time <- Sys.time()
+> linear_regression(train, test)
+> end_time <- Sys.time()
+> print(end_time - start_time)
+Time difference of 0.009263992 secs
+> 
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> DATA_PATH = "/Users/hilsts/Documents/linear-models-benchmark/data/"
+> df <- read.csv(paste(DATA_PATH,"song_data.csv", sep = ""))
+> 
+> set.seed(100)
+> 
+> df$song_name <- NULL
+> 
+> index = sample(1:nrow(df), 0.75 * nrow(df))
+> 
+> train = df[index, ]
+> test = df[-index, ]
+> 
+> linear_regression <- function(train, test) {
++     lr = lm(song_popularity~., data = train)
++     pred1 <- predict(lr, newdata = test)
++ }
+> 
+> start_time <- Sys.time()
+> linear_regression(train, test)
+> end_time <- Sys.time()
+> print(end_time - start_time)
+Time difference of 0.009503841 secs
+> 
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> DATA_PATH = "/Users/hilsts/Documents/linear-models-benchmark/data/"
+> df <- read.csv(paste(DATA_PATH,"song_data.csv", sep = ""))
+> 
+> set.seed(100)
+> 
+> df$song_name <- NULL
+> 
+> index = sample(1:nrow(df), 0.75 * nrow(df))
+> 
+> train = df[index, ]
+> test = df[-index, ]
+> 
+> linear_regression <- function(train, test) {
++     lr = lm(song_popularity~., data = train)
++     pred1 <- predict(lr, newdata = test)
++ }
+> 
+> start_time <- Sys.time()
+> linear_regression(train, test)
+> end_time <- Sys.time()
+> print(end_time - start_time)
+Time difference of 0.008882046 secs
+> 
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> DATA_PATH = "/Users/hilsts/Documents/linear-models-benchmark/data/"
+> df <- read.csv(paste(DATA_PATH,"song_data.csv", sep = ""))
+> 
+> set.seed(100)
+> 
+> df$song_name <- NULL
+> 
+> index = sample(1:nrow(df), 0.75 * nrow(df))
+> 
+> train = df[index, ]
+> test = df[-index, ]
+> 
+> linear_regression <- function(train, test) {
++     lr = lm(song_popularity~., data = train)
++     pred1 <- predict(lr, newdata = test)
++ }
+> 
+> start_time <- Sys.time()
+> linear_regression(train, test)
+> end_time <- Sys.time()
+> print(end_time - start_time)
+Time difference of 0.008867979 secs
+> 
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> DATA_PATH = "/Users/hilsts/Documents/linear-models-benchmark/data/"
+> df <- read.csv(paste(DATA_PATH,"song_data.csv", sep = ""))
+> 
+> set.seed(100)
+> 
+> df$song_name <- NULL
+> 
+> index = sample(1:nrow(df), 0.75 * nrow(df))
+> 
+> train = df[index, ]
+> test = df[-index, ]
+> 
+> linear_regression <- function(train, test) {
++     lr = lm(song_popularity~., data = train)
++     pred1 <- predict(lr, newdata = test)
++ }
+> 
+> start_time <- Sys.time()
+> linear_regression(train, test)
+> end_time <- Sys.time()
+> print(end_time - start_time)
+Time difference of 0.008785963 secs
+> 
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> DATA_PATH = "/Users/hilsts/Documents/linear-models-benchmark/data/"
+> df <- read.csv(paste(DATA_PATH,"song_data.csv", sep = ""))
+> 
+> set.seed(100)
+> 
+> df$song_name <- NULL
+> 
+> index = sample(1:nrow(df), 0.75 * nrow(df))
+> 
+> train = df[index, ]
+> test = df[-index, ]
+> 
+> linear_regression <- function(train, test) {
++     lr = lm(song_popularity~., data = train)
++     pred1 <- predict(lr, newdata = test)
++ }
+> 
+> start_time <- Sys.time()
+> linear_regression(train, test)
+> end_time <- Sys.time()
+> print(end_time - start_time)
+Time difference of 0.008842945 secs
+> 
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> DATA_PATH = "/Users/hilsts/Documents/linear-models-benchmark/data/"
+> df <- read.csv(paste(DATA_PATH,"song_data.csv", sep = ""))
+> 
+> set.seed(100)
+> 
+> df$song_name <- NULL
+> 
+> index = sample(1:nrow(df), 0.75 * nrow(df))
+> 
+> train = df[index, ]
+> test = df[-index, ]
+> 
+> linear_regression <- function(train, test) {
++     lr = lm(song_popularity~., data = train)
++     pred1 <- predict(lr, newdata = test)
++ }
+> 
+> start_time <- Sys.time()
+> linear_regression(train, test)
+> end_time <- Sys.time()
+> print(end_time - start_time)
+Time difference of 0.008854151 secs
+> 
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> DATA_PATH = "/Users/hilsts/Documents/linear-models-benchmark/data/"
+> df <- read.csv(paste(DATA_PATH,"song_data.csv", sep = ""))
+> 
+> set.seed(100)
+> 
+> df$song_name <- NULL
+> 
+> index = sample(1:nrow(df), 0.75 * nrow(df))
+> 
+> train = df[index, ]
+> test = df[-index, ]
+> 
+> linear_regression <- function(train, test) {
++     lr = lm(song_popularity~., data = train)
++     pred1 <- predict(lr, newdata = test)
++ }
+> 
+> start_time <- Sys.time()
+> linear_regression(train, test)
+> end_time <- Sys.time()
+> print(end_time - start_time)
+Time difference of 0.008847952 secs
+> 
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> DATA_PATH = "/Users/hilsts/Documents/linear-models-benchmark/data/"
+> df <- read.csv(paste(DATA_PATH,"song_data.csv", sep = ""))
+> 
+> set.seed(100)
+> 
+> df$song_name <- NULL
+> 
+> index = sample(1:nrow(df), 0.75 * nrow(df))
+> 
+> train = df[index, ]
+> test = df[-index, ]
+> 
+> linear_regression <- function(train, test) {
++     lr = lm(song_popularity~., data = train)
++     pred1 <- predict(lr, newdata = test)
++ }
+> 
+> start_time <- Sys.time()
+> linear_regression(train, test)
+> end_time <- Sys.time()
+> print(end_time - start_time)
+Time difference of 0.008744001 secs
+> 
